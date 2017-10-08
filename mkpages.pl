@@ -87,8 +87,9 @@ close O;
 # pages
 #
 my %ICONTYPE = (
- 'C'  => 'fa-rotate-right',
+ 'O'  => 'fa-rotate-right', # FIXME!
  'CC' => 'fa-rotate-left',
+ 'C'  => 'fa-rotate-right',
  'P'  => 'tofinish',
  'K'  => 'kart',
  'T'  => 'kurve',
@@ -201,6 +202,18 @@ sub incgra {
 
 
 __DATA__
+xxxxxxx
+x . . x
+x.....x
+x.....x
+x.....x
+x.....x
+xxxxxxx
+xxxxxxx
+xxxxxxx
+xxxxxxx
+
+
 xxxxxxx
 x.....x
 x.....x

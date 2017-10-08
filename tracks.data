@@ -1,8 +1,8 @@
 ALG.png//Algarve/Portugal
--/AALG/Autódromo Internacional do Algarve/C/2.91m/14/1/32
-ACI.png//Azure Circuit/Monaco
+-/AALG/Autódromo Internacional do Algarve/C/2.91m/14/2017/1/32
+AZI.png//Azure Circuit/Monaco
 -/AZCI/Azure Circuit/C/2.07m/19/2015/2/36
-ACO.png//Azure Coast/France
+AZO.png//Azure Coast/France
 -/AZCO/Azure Coast/P/11.96m/95/2015/3/32
 -/AZCOS1/Azure Coast Stage 1/P/4.59m/40/2015/3/32
 -/AZCOS2/Azure Coast Stage 2/P/4.28m/33/2015/3/32
@@ -92,7 +92,7 @@ LAG.png//Laguna Seca/USA
 LEM.png//Circuit des 24 Heures du Mans/France
 -/CIDUMA/Circuit des 24 Heures du Mans/CC/8.46m/38/2015/3/45
 -/LECIBU/Le Mans Bugatti Circuit/C/2.65m/10/2015/2/40
-LEK.png//Le Mans Karting International
+LEK.png//Le Mans Karting International/France
 -/LEKI/Le Mans International Karting Circuit/K/0.85m/19/2017/1/20
 LOH.png//Loheac/France
 -/LOHE/Rallycross of Loheac/C/0.67m/9/2017/1/6
@@ -101,7 +101,7 @@ LON.png//Long Beach/USA
 LYD.png//Lydden Hill/United Kingdom
 -/LYDRX/Lydden Hill Rallycross/C/0.72m/4/2017/1/6
 -/LYDC/Lydden Hill GP/C/0.90m/4/2017/1/16
-MER.png//Mercedes-Benz Ice Track
+MER.png//Mercedes-Benz Ice Track/Sweden
 -/MERS/Mercedes-Benz Driving Events Ice Track 1/C/1.25m/15/2017/1/0
 -/MERE/Mercedes-Benz Driving Events Ice Track 2/C/1.45m/23/2017/1/0
 -/MERW/Mercedes-Benz Driving Events Ice Track 3/C/1.70m/32/2017/1/0
@@ -139,9 +139,9 @@ OUL.png//Oulton Park/United Kingdom
 -/OUPAIS/Oulton Park Island/C/2.24m/7/2015/2/26
 -/OUPAFO/Oulton Park Fosters/C/1.65m/5/2015/2/26
 RED.png//Red Bull Ring/Austria
--/REDGP/Red Bull Ring GP/2.68m/10/2017/1/32
--/REDNA/Red Bull Ring National/1.45m/6/2017/1/32
--/REDCL/Red Bull Ring Club/1.14m/5/2017/1/32
+-/REDGP/Red Bull Ring GP/C/2.68m/10/2017/1/32
+-/REDNA/Red Bull Ring National/C/1.45m/6/2017/1/32
+-/REDCL/Red Bull Ring Club/C/1.14m/5/2017/1/32
 ROA.png//Road America/USA
 -/ROAM/Road America/C/4.04m/14/2015/2/45
 ROU.png//Rouen Les Essarts/France
