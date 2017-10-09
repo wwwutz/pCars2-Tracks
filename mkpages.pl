@@ -13,15 +13,19 @@ my $LOCATIONS;
 open I,'<','tracks.data' or die "$?: $!";
 my $loc = '';
 my $lc = 0;
+my $lo = 0;
+my $to = 0;
 while (<I>) {
    s/\015?\012/\n/g;
     chomp;
     /^\s*$/ and next;
+    /^\s*#/ and next;
     if (/^\-(.*)/) {
       my ($f,$trackid,@r) = split(/\//,$1);
       map { $TRACKS->{$loc}->{$trackid}->{$_} = shift @r } qw( name type miles turns year size cars );
       $TRACKS->{$loc}->{$trackid}{img} = $f;
       my ($l,$m) = $TRACKS->{$loc}->{$trackid}->{miles} =~ m/(\d+\.\d+)(m?)/;
+      $TRACKS->{$loc}->{$trackid}->{so} = $to++;
       my ( $km, $mi );
       if ($m eq 'm') {
         $mi = $l;
@@ -111,7 +115,7 @@ my %PAGE;
 my $page=2; # page before tracks
 for my $loc (sort @LOCATIONS) {
   my $printlogo = 1;
-  for my $trackid ( sort keys %{$TRACKS->{$loc}} ) {
+  for my $trackid ( sort { $TRACKS->{$loc}->{$a}->{so} <=> $TRACKS->{$loc}->{$b}->{so} } keys %{$TRACKS->{$loc}} ) {
     my $track = $TRACKS->{$loc}->{$trackid}->{name};
 
     $page++;
@@ -170,12 +174,12 @@ close O;
 
 open O,'>','all-toc.tex' or die "$?:$!";
 print  O '\setlength\LTleft{0pt} \setlength\LTright{0pt}'."\n";
-print  O '\begin{longtable}{llrrcccc}'."\n";
+print  O '\begin{longtable}{lp{9cm}rrcccr}'."\n";
 printf O $ICON{L}.' & '.$ICON{R}.' & \multicolumn{2}{c}{'.$ICON{D}.'} & '.$ICON{T}.' & '.$ICON{CAR}.' &  &  \\endhead'."\n";
 for my $loc (sort @LOCATIONS) {
   printf O '\multicolumn{2}{l}{%s}'."\\\\\n",$loc;
-  for my $trackid ( sort keys %{$TRACKS->{$loc}} ) {
-    print O "\\hspace{1cm} & \\hyperref[$trackid]{$TRACKS->{$loc}->{$trackid}->{name}\\dotfill}";
+  for my $trackid ( sort { $TRACKS->{$loc}->{$a}->{so} <=> $TRACKS->{$loc}->{$b}->{so} } keys %{$TRACKS->{$loc}} ) {
+    print O " & \\hyperref[$trackid]{$TRACKS->{$loc}->{$trackid}->{name}\\dotfill}";
     print O " & $TRACKS->{$loc}->{$trackid}->{km}\\,km ";
     print O " & $TRACKS->{$loc}->{$trackid}->{mi}\\,mi ";
     print O " & $TRACKS->{$loc}->{$trackid}->{turns} ";
@@ -191,28 +195,30 @@ close O;
 exit;
 
 sub incgra {
+  our $grey;
   my ($x, $y, $tp) = @_;
   print "### [$tp] $LOCATIONS[$tp] $x / $y\n";
   my $tx = int ($x * 0.1171875);
   my $ty = int ($y * 0.1171875) + 0;
   printf O "\\begin{textblock*}{30mm}(%dmm,%dmm)%%\n",$tx,$ty;
-  printf O "\\includegraphics[width=30mm]{LG/%s}\n",$LOCATIONS->{$LOCATIONS[$tp]}->{img};
+  $grey = 1 - $grey;
+  my $rot = rand(20)-10;
+  printf O "\\rotatebox{$rot}{\\colorbox{grey$grey}{\\includegraphics[width=28mm,height=28mm,keepaspectratio=true]{LG/%s}}}\n",$LOCATIONS->{$LOCATIONS[$tp]}->{img};
   printf O "\\end{textblock*}\n";
 }
 
 
 __DATA__
 xxxxxxx
-x . . x
-x.....x
-x.....x
 x.....x
 x.....x
 xxxxxxx
+xx...xx
 xxxxxxx
 xxxxxxx
+xx...xx
 xxxxxxx
-
+xxxxxxx
 
 xxxxxxx
 x.....x

@@ -34,12 +34,12 @@ CAL.png//California Highway/USA
 CHE.png//Chesterfield Karting Circuit/United Kingdom
 -/CFGP/Chesterfield Karting Circuit/K/871.26/13/2015/1/24
 CIR.png//Circuit of the Americas/USA
--/CIRGP/Circuit of the Americas GP/C/3.42m/20/2017/1/32
--/CIRNA/Circuit of the Americas National/C/2.30m/17/2017/1/32
--/CIRCL/Circuit of the AmericasClub/C/1.23m/6/2017/1/18
+-/CIRGP/Circuit of the Americas GP/CC/3.42m/20/2017/1/32
+-/CIRNA/Circuit of the Americas National/CC/2.30m/17/2017/1/32
+-/CIRCL/Circuit of the Americas Club/CC/1.23m/6/2017/1/18
 DAY.png//Daytona International Speedway/USA
--/DAYTO/Daytona International Speedway Tri-Oval/O/2.49m/4/2017/1/32
--/DAYRC/Daytona Road Course/C/3.55m/12/2017/1/32
+-/DAYTO/Daytona International Speedway Tri-Oval/CC/2.49m/4/2017/1/32
+-/DAYRC/Daytona Road Course/CC/3.55m/12/2017/1/32
 -/DAYRX/Daytona International Speedway Rallycross/C/0.71m/15/2017/1/6
 DIR.png//DirtFish/USA
 -/DIRRC/DirtFish Pro Rallycross Course/C/0.84m/12/2017/1/6
@@ -78,19 +78,19 @@ HOC.png//Hockenheimring/Germany
 IMO.png//Imola/Italy
 -/IMOL/Imola/CC/3.05m/17/2015/3/40
 IND.png//Indianapolis Motor Speedway/USA
--/INDOV/Indianapolis Motor Speedway Oval/O/2.49m/4/2017/1/32
+-/INDOV/Indianapolis Motor Speedway Oval/CC/2.49m/4/2017/1/32
 -/INDRC/Indianapolis Motor Speedway Road Course/C/2.49m/13/2017/1/28
 KNO.png//Knockhill/Scotland
 -/KNOR/Knockhill International/C/1.29m/9/2017/1/12
--/KNORR/Knockhill International Reverse/C/1.29m/9/2017/1/12
+-/KNORR/Knockhill International Reverse/CC/1.29m/9/2017/1/12
 -/KNONA/Knockhill National/C/0.99m/10/2017/1/12
--/KNONR/Knockhill National Reverse/C/0.99m/10/2017/1/12
+-/KNONR/Knockhill National Reverse/CC/0.99m/10/2017/1/12
 -/KNOTO/Knockhill Tri-Oval/C/0.29m/3/2017/1/10
 -/KNORX/Knockhill Rallycross/C/0.85m/8/2017/1/6
 LAG.png//Laguna Seca/USA
 -/MRLASE/Mazda Raceway Laguna Seca/CC/2.23m/11/2015/2/26
 LEM.png//Circuit des 24 Heures du Mans/France
--/CIDUMA/Circuit des 24 Heures du Mans/CC/8.46m/38/2015/3/45
+-/CIDUMA/Circuit des 24 Heures du Mans/C/8.46m/38/2015/3/45
 -/LECIBU/Le Mans Bugatti Circuit/C/2.65m/10/2015/2/40
 LEK.png//Le Mans Karting International/France
 -/LEKI/Le Mans International Karting Circuit/K/0.85m/19/2017/1/20
@@ -102,11 +102,11 @@ LYD.png//Lydden Hill/United Kingdom
 -/LYDRX/Lydden Hill Rallycross/C/0.72m/4/2017/1/6
 -/LYDC/Lydden Hill GP/C/0.90m/4/2017/1/16
 MER.png//Mercedes-Benz Ice Track/Sweden
--/MERS/Mercedes-Benz Driving Events Ice Track 1/C/1.25m/15/2017/1/0
--/MERE/Mercedes-Benz Driving Events Ice Track 2/C/1.45m/23/2017/1/0
--/MERW/Mercedes-Benz Driving Events Ice Track 3/C/1.70m/32/2017/1/0
--/MERN/Mercedes-Benz Driving Events Ice Track 4/C/1.64m/23/2017/1/0
--/MERNE/Mercedes-Benz Driving Events Ice Track 5/C/2.78m/43/2017/1/0
+-/MERS/Mercedes-Benz Driving Events Ice Track 1/CC/1.25m/15/2017/1/1
+-/MERE/Mercedes-Benz Driving Events Ice Track 2/CC/1.45m/23/2017/1/1
+-/MERW/Mercedes-Benz Driving Events Ice Track 3/C/1.70m/32/2017/1/1
+-/MERN/Mercedes-Benz Driving Events Ice Track 4/CC/1.64m/23/2017/1/1
+-/MERNE/Mercedes-Benz Driving Events Ice Track 5/C/2.78m/43/2017/1/1
 MOJ.png//Mojave/USA
 -/MOJABA/Mojave Boa Ascent/C/1.82m/17/2015/3/45
 -/MOJASW/Mojave Sidewinder/C/1.65m/11/2015/3/45
@@ -119,7 +119,8 @@ MON.png//Monza/Italy
 MON.png//Monza Classic/Italy
 -/MONGP/Autodromo Nazionale Monza GP Historic/C/3.91m/6/2017/1/22
 -/MONOV/Autodromo Nazionale Monza Oval Historic/C/2.63m/2/2017/1/22
--/MONMX/Autodromo Nazionale Monza Historic Historic Oval + GP Mix/C/6.21m/9/2017/1/22
+#-/MONMX/Autodromo Nazionale Monza Historic Oval + GP Mix/C/6.21m/9/2017/1/22
+-/MONMX/Autodromo Nazionale Monza Oval + GP Mix/C/6.21m/9/2017/1/22
 NUR.png//Nürburgring/Germany
 -/NBRGP/Nürburgring GP/C/3.19m/16/2015/3/30
 -/NO/Nürburgring Nordschleife/C/12.94m/73/2015/3/32
@@ -186,8 +187,8 @@ SUM.png//Summerton Karting Circuit/United Kingdom
 -/SUMMNA/Summerton National/K/829.41/7/2015/1/28
 -/SUMMSP/Summerton Sprint/K/778.1/6/2015/1/28
 TEX.png//Texas Motor Speedway/USA
--/TEXMS/Texas Motor Speedway/O/1.49m/4/2017/1/32
--/TEXRC/Texas Motor Speedway Road Course/C/2.82m/4/2017/1/32
+-/TEXMS/Texas Motor Speedway/CC/1.49m/4/2017/1/32
+-/TEXRC/Texas Motor Speedway Road Course/CC/2.82m/4/2017/1/32
 -/TEXIC/Texas Motor Speedway Infield Course/C/1.36m/4/2017/1/20
 WAT.png//Watkins Glen International/USA
 -/WAGLGP/Watkins Glen International GP/C/3.37m/11/2015/2/43
