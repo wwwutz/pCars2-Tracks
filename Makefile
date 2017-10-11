@@ -1,10 +1,10 @@
 .PHONY: all clean
 
-all: pcarstracks.pdf
+all: pcars2tracks.pdf
 
-pcarstracks.tex:  logos-fp.tex all-tracks.tex all-toc.tex
+pcars2tracks.tex:  logos-fp.tex all-tracks.tex all-toc.tex
 
-pcarstracks.pdf: pcarstracks.tex logos-fp.tex all-tracks.tex all-toc.tex
+pcars2tracks.pdf: pcars2tracks.tex logos-fp.tex all-tracks.tex all-toc.tex
 	pdflatex $<
 	pdflatex $<
 

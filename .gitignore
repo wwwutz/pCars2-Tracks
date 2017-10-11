@@ -1,0 +1,7 @@
+*.aux
+*.log
+*/Thumbs.db
+.nfs*
+pcarstracks.out
+logos-fp.tex
+all-toc.tex
